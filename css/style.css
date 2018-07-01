@@ -1,0 +1,241 @@
+@font-face {
+    font-family: neoteric;
+    src: url('/blitzkrieg/fonts/Autobus-Bold.ttf');
+}
+
+.aud{
+  visibility: hidden;
+  //display: block;
+  //margin-top: 1000px;
+}
+body{
+  background-color: black;
+  font-family: neoteric;
+}
+#myProgress {
+  width: 100%;
+  background-color: black;
+}
+
+#myBar {
+  width: 0%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 5vh;
+  color: white;
+}
+.button {
+    background-color: Black;
+    border: none;
+    color: white;
+	width: 100%;
+	height: 95vh;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20vw;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.timer {
+    background-color: Black;
+    border: none;
+	position: center;
+    color: white;
+    font-size: 20vw;
+    margin: 4px 2px;
+	width: 100%;
+	height: 90vh;
+  line-height: 90vh;
+}
+.title{
+  color: white;
+  text-align: center;
+  margin-top: 35px;
+  font-size: 36pt;
+  margin-bottom: 5px;
+}
+.subtitle{
+  color: white;
+  text-align: center;
+  margin-top: 0px;
+  font-size: 24pt;
+}
+.playlist{
+  display: inline-block;
+  float: left;
+  width: 18%;
+  margin-right: 2.5%;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  background: #1ed760;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 1px rgba(11, 56, 27, 1);
+  margin-bottom: 25px;
+}
+.playlist:nth-child(5n + 5){
+  margin-right: 0;
+}
+.playlist img{
+  width: 80%;
+  margin-top: 25px;
+}
+.playlist h5{
+  font-size: 16pt;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.playlist h6{
+  color: #ddd;
+  margin-top: 0px;
+  font-size: 12pt;
+  margin-bottom: 25px;
+}
+.playlist:hover{
+  background: #118a3c;
+}
+.playlists{
+  width: 80%;
+  margin-left: 10%;
+  overflow: hidden;
+}
+.spotify-info{
+  position: absolute;
+  width: 350px;
+  height: 425px;
+  left: calc(50% - 565px);
+  top: calc(50% - 227.5px);
+  background: #1ed760;
+  color: white;
+  display: none;
+}
+.spotify-info img{
+  height: 300px;
+  width: 300px;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+.spotify-info h3{
+  text-align: center;
+  font-size: 18pt;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.spotify-info h4{
+  text-align: center;
+  font-size: 16pt;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+#myProgress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: grey;
+}
+#myBar {
+    width: 0%;
+    height: 30px;
+    background-color: #4CAF50;
+}
+#counter{
+  text-align: center; /* To center it horizontally (if you want) */
+  line-height: 30px; /* To center it vertically */
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 30px;
+}
+.nav{
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-decoration: none;
+  font-size: 12pt;
+}
+.nav:hover{
+  text-decoration: underline;
+}
+.mode{
+  position: absolute;
+  color: white;
+  font-size: 12pt;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 20px;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 20px;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+#powerhour{
+  right: 230px;
+}
+#blitz{
+  right: 145px;
+}
+.mode:hover{
+  background: #1ed760;
+}
+.active{
+  background: #1ed760;
+}
+.start{
+  position: absolute;
+  background: #666;
+  font-size: 24pt;
+  height: 70px;
+  width: 300px;
+  line-height: 70px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  top: calc(50% - 35px);
+  left: calc(50% - 150px);
+}
+.info{
+  position: absolute;
+  color: white;
+  bottom: 40px;
+  right: 10px;
+}
+.song{
+  position: absolute;
+  color: white;
+  bottom: 40px;
+  left: 10px;
+}
+.end{
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  color: white;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: 0;
+  font-size: 32pt;
+  text-align: center;
+  display: none;
+}
+.youtube{
+  display: none;
+  position: absolute;
+  right: calc(50% - 565px);
+  top: calc(50% - 227.5px);
+}
